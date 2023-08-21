@@ -13,8 +13,8 @@ print(r""" ||    _                                      _
                                                   _____|_\_____/||___ .01lig""")
 print("\n****************************************************\n")
 print("********Copyright of gilles karougbe, jully 2022********")
-print("*********http://www.github.com/gilleskarougbe***********")
-print("***********https://twiter.com/01karougbe****************")
+print("*********http://www.github.com/gil01karougbe***********")
+print("***********https://twitter.com/01karougbe****************")
 print("***linkedin.com/in/essognim-gilles-karougbe-015979223***")
 print("\n****************************************************\n")
 #desable ip addr check
@@ -36,10 +36,13 @@ def send_dhcprequests():
         c = scapy.UDP(sport =68,dport = 67)
         d = scapy.BOOTP(op=1,chaddr =mac)
         e = scapy.DHCP(options=[('message-type','request'),('end')])
+        
         #dhcp request message
         dhcp_request = a/b/c/d/e
         scapy.sendp(dhcp_request)
-        time.sleep(1)
+        time.sleep(2)
+
+
 
 #check sudo  previleges
 in_sudo_mode()
