@@ -9,19 +9,14 @@
 
 # [steps to use the program]
 
-    $ git clone https://github.com/gil01karougbe/ARP-Cache-Poisoning.git
+    $ git clone https://github.com/gil01karougbe/DHCP_STARVATION.git
 
-    $ cd ARP-Cache-Poisoning
+    $ cd DHCP_STARVATION
 
     $ pip install -r requirements.txt
 
-    $ sudo python3 arp_poison.py -M hacker_mac -V victim_mac victim_ip -R getway_mac getway_ip
+    $ sudo python3 dhcp_starvation.py
 
 
-# Remarques
-Run 
 
-      $ arp-scan -I eth0 192.168.1.0/24
-
-To discover Informations about the network in order to lunch the attack
         
